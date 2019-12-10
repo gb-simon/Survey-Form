@@ -1,0 +1,111 @@
+<head>
+<h1 id="title">Survey Form</h1>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="form-outer">
+    <form action="" id="survey-form" autocomplete="off">
+
+      <div class="form-column">
+
+        <div class="name">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" name="new-name" id="name" placeholder="Enter your name" autocomplete="nope" required>
+        </div>
+
+        <div class="email">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="false" required>
+        </div>
+        
+      <div class="form-column">
+
+        <div class="last-name">
+          <label for="last-name" id="last-name-label">Last Name</label>
+          <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" autocomplete="nope" required>
+        </div>
+
+        <div class="number">
+          <label for="number" id="userAge">Age</label>
+          <input type="number" name="age" id="number" placeholder="Enter your age" min="1" max="130" required>
+        </div>
+
+        <div class="radio-buttons">
+          <h3>Sex</h3>
+
+          <div class="radio-button">
+            <input type="radio" name="sex" value="male" id="male">
+            <label for="male">
+              <span class="radio-button-span"></span>
+              Male
+            </label>
+          </div>
+
+          <div class="radio-button">
+            <input type="radio" name="sex" value="female" id="female">
+            <label for="female">
+              <span class="radio-button-span"></span>
+              Female
+            </label>
+          </div>
+
+        </div>
+
+        <div class="checkboxes">
+          <h3>Music Interests</h3>
+          <div class="sport-column">
+
+            <label for="football">
+              <input type="checkbox" value="sports" id="football">
+              <span class="checkbox-text">Rock</span>
+            </label>
+
+            <label for="tennis">
+              <input type="checkbox" value="sports" id="tennis">
+              <span class="checkbox-text">Pop</span>
+            </label>
+
+            <label for="table-tennis">
+              <input type="checkbox" value="sports" id="table-tennis">
+              <span class="checkbox-text">Jazz</span>
+            </label>
+          </div>
+
+          <div class="sport-column">
+
+            <label for="baseball">
+              <input type="checkbox" value="sports" id="baseball">
+              <span class="checkbox-text">Electro</span>
+            </label>
+
+            <label for="basketball">
+              <input type="checkbox" value="sports" id="basketball">
+              <span class="checkbox-text">Rap</span>
+            </label>
+
+            <label for="volleyball">
+              <input type="checkbox" value="sports" id="volleyball">
+              <span class="checkbox-text">Hip Hop</span>
+            </label>
+          </div>
+        </div>
+      
+
+    </form>
+  </div>
+    
+        <div class="textarea">
+          <label for="comments">Comments</label>
+          <textarea name="comments" placeholder="Any comment?" id="comments" cols="25" rows="4"></textarea>
+        </div>
+
+      </div>
+  <div class="outer-button">
+          <input type="submit" value="Submit" id="submit">
+        </div>
+      </div>
+</body>
+
+</html>
